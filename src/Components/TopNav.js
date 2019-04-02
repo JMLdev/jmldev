@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Octicon, { Info, FileCode, Mail, MarkGithub, KebabVertical } from '@githubprimer/octicons-react';
 import {
     Collapse,
@@ -44,7 +45,7 @@ export default class TopNav extends React.Component {
                                 <NavLink href=""><Octicon icon={Info} />About</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href=""><Octicon icon={FileCode} /> Work</NavLink>
+                                <NavLink tag={Link} to="/work"><Octicon icon={FileCode} /> Work</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="https://github.com/JMLdev"><Octicon icon={MarkGithub} /> GitHub</NavLink>

@@ -45,11 +45,24 @@ body {
     }
 }
 
+p {
+    line-height: 32px;
+}
+
 .home-heading {
     margin-top: 84px;
     margin-bottom: 48px;
 }
 
-p {
-    line-height: 32px;
+.spark {
+    background-color: #DE4A00;
+    font-family: 'Helvetica', sans-serif;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #AB000B;
 }
