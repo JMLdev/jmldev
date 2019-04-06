@@ -22,8 +22,8 @@ export default class TopNav extends React.Component {
             start: {
                 yMin: this.initialHeight - 32,
                 yMax: this.initialHeight - 32,
-                xMin: 100,
-                xMax: 200,
+                xMin: 10,
+                xMax: 20,
                 scaleMin: 0.1,
                 scaleMax: 0.25,
                 scaleXMin: 0.1,
@@ -34,7 +34,7 @@ export default class TopNav extends React.Component {
                 opacityMax: 0.4
             },
             mid: {
-                yMin: this.initialHeight + 300,
+                yMin: this.initialHeight + 480,
                 yMax: this.initialHeight + 500,
                 xMin: 200,
                 xMax: 250,
