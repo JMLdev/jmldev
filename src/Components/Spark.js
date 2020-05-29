@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {TweenLite, Back, Linear, Power1} from 'gsap/TweenMax';
 import {Row, Col} from 'reactstrap';
 

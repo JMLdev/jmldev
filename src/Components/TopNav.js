@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Octicon, { Info, FileCode, Mail, MarkGithub, KebabVertical } from '@githubprimer/octicons-react';
 import {
@@ -51,7 +52,7 @@ export default class TopNav extends React.Component {
                                 <NavLink href="https://github.com/JMLdev"><Octicon icon={MarkGithub} /> GitHub</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href=""><Octicon icon={Mail} /> Contact</NavLink>
+                                <NavLink tag={Link} to="/contact"><Octicon icon={Mail} /> Contact</NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
