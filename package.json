@@ -7,7 +7,7 @@
     "bootstrap": "^4.3.1",
     "confetti-js": "0.0.14",
     "gsap": "^2.1.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -29,5 +29,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "react-load-script": "0.0.6"
+  }
 }

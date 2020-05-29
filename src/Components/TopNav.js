@@ -1,7 +1,7 @@
 import React from 'react';
 // eslint-disable-next-line
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Octicon, { Info, FileCode, Mail, MarkGithub, KebabVertical } from '@githubprimer/octicons-react';
+import Octicon, { Info, FileCode, Mail, MarkGithub } from '@githubprimer/octicons-react';
 import {
     Collapse,
     Navbar,
@@ -9,11 +9,7 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
+    NavLink
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 
@@ -22,6 +18,7 @@ export default class TopNav extends React.Component {
         super(props);
 
         this.toggle = this.toggle.bind(this);
+        this.closeNavbar = this.closeNavbar.bind(this);
         this.state = {
             isOpen: false
         };
@@ -31,6 +28,12 @@ export default class TopNav extends React.Component {
             isOpen: !this.state.isOpen
         });
     }
+    closeNavbar() {
+        this.setState({
+            isOpen: false
+        });
+    }
+
     render() {
         return (
             <div>
@@ -43,34 +46,17 @@ export default class TopNav extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href=""><Octicon icon={Info} />About</NavLink>
+                                <NavLink tag={Link} to="/about" onClick={this.closeNavbar}><Octicon icon={Info} />About</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} to="/work"><Octicon icon={FileCode} /> Work</NavLink>
+                                <NavLink tag={Link} to="/work" onClick={this.closeNavbar}><Octicon icon={FileCode} /> Work</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="https://github.com/JMLdev"><Octicon icon={MarkGithub} /> GitHub</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} to="/contact"><Octicon icon={Mail} /> Contact</NavLink>
+                                <NavLink tag={Link} to="/contact" onClick={this.closeNavbar}><Octicon icon={Mail} /> Contact</NavLink>
                             </NavItem>
-                            <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
-                                    <Octicon icon={KebabVertical} /> Options
-                                </DropdownToggle>
-                                <DropdownMenu right>
-                                    <DropdownItem>
-                                        Option 1
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        Option 2
-                                    </DropdownItem>
-                                    <DropdownItem divider />
-                                    <DropdownItem>
-                                        Reset
-                                    </DropdownItem>
-                                </DropdownMenu>
-                            </UncontrolledDropdown>
                         </Nav>
                     </Collapse>
                 </Navbar>

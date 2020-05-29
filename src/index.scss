@@ -10,6 +10,9 @@ body {
     /* background: linear-gradient(to top,#2f2f2f 96%,#393939 100%); */
     background-color: $background;
     color: $foreground;
+    img {
+        max-width: 100%;
+    }
 }
 
 .navbar-dark {
@@ -58,11 +61,45 @@ p {
     background-color: #DE4A00;
     font-family: 'Helvetica', sans-serif;
     visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     box-shadow: 0 0 2px #AB000B;
+}
+
+.linked-in {
+    text-align: center;
+
+    .LI-profile-badge {
+        margin-top: 124px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#bubble-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.work {
+    text-align: center;
+
+    .squirrel-wrap {
+        margin-right: auto;
+        margin-left: auto;
+        display: inline-block;
+        position: relative;
+        margin-top: 84px;
+
+        p {
+            position: absolute;
+            top: 19px;
+            right: 0;
+        }
+    }
+
 }
