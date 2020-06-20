@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {TweenLite, Back, Linear, Power1} from 'gsap/TweenMax';
 import {Row, Col} from 'reactstrap';
 
@@ -134,7 +133,7 @@ export default class TopNav extends React.Component {
     
     createParticle = (parentItem) => {
         var i, particleSpark;
-        for (i = 0; i < this.state.density; i += 1) {
+        for (i = 0; i < this.state.density; i += 10) {
             particleSpark = document.createElement('div');
             particleSpark.classList.add('spark');
             parentItem.appendChild(particleSpark);

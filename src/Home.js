@@ -1,38 +1,17 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
-import 'confetti-js';
 
 class Home extends Component {
     constructor() {
         super();
         this.state = {
-            content: '',
-            canvasStyle: {
-                position: "absolute",
-                top: "0",
-                left: "0",
-                right: "0",
-                bottom: "0",
-                zIndex: "-9999",
-                width: "100%",
-                height: "100%",
-                background: "transparent"
-            }
+            content: ''
         }
         this.aboutText = React.createRef();
     }
 
     componentDidMount() {
         this.typeWriter();
-        const ConfettiGenerator = window.ConfettiGenerator;
-        let confettiSettings = { 
-            target: 'my-canvas',
-            clock: 1,
-            colors: [0,0,0],
-            rotate: true
-        };
-        let confetti = new ConfettiGenerator(confettiSettings);
-        confetti.render();
     }
 
     typeWriter = () => {
@@ -59,8 +38,6 @@ class Home extends Component {
                         </p>
                     </Col>
                 </Row>
-                <canvas id="my-canvas" style={this.state.canvasStyle}>
-                </canvas>
             </React.Fragment>
         );
     }
