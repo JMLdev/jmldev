@@ -18,22 +18,7 @@ class Contact extends Component {
       <React.Fragment>
         <Row>
           <Col xs="12" className="linked-in">
-            <div
-              className="LI-profile-badge"
-              data-version="v1"
-              data-size="medium"
-              data-locale="en_US"
-              data-type="vertical"
-              data-theme="dark"
-              data-vanity="jeremiahmlong"
-            >
-              <a
-                className="LI-simple-link"
-                href="https://www.linkedin.com/in/jeremiahmlong?trk=profile-badge"
-              >
-                Jeremiah Long
-              </a>
-            </div>
+            <img src="/profile-picture.jpg" alt="Profile portrait"/>
           </Col>
         </Row>
       </React.Fragment>

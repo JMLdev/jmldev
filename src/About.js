@@ -8,7 +8,7 @@ class About extends Component {
             <React.Fragment>
                 <Row>
                     <Col xs={12}>
-                        <h1 className="home-heading">
+                        <h1 className="page-heading">
                             About Me
                         </h1>
                         <p className="home-text">
