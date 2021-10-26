@@ -8,7 +8,7 @@ class Work extends Component {
     return (
       <Row className="work">
         <Col xs="12">
-          <h1 class="page-heading">
+          <h1 class="page-title">
             Some of my work
           </h1>
         </Col>
@@ -33,7 +33,7 @@ class Work extends Component {
         <WorkItem 
           image="/msft-oobe.png"
           alt="Microsoft's OOBE"
-          headline="Microsoft's Out Of Box Experience software"
+          headline="Microsoft's 'Out Of Box Experience' software"
           description="You've likely seen this interface any time you have installed Windows, purchased a new computer, or even looked at a Windows computer at the store."
         />
       </Row>

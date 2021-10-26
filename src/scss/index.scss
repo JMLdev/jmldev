@@ -6,6 +6,7 @@
 @import './components/spark-bubble';
 @import './components/work';
 @import './components/contact';
+@import './components/about';
 
 body {
     margin: 0;
@@ -24,9 +25,29 @@ body {
 
 
 p {
+    font-size: 18px;
     line-height: 32px;
 }
 
+.text-block {
+    background-color: #333;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 24px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        right: auto;
+        left: -20px;
+        border: 22px solid;
+        border-color: #333 transparent transparent transparent;
+
+    }
+}
 a {
     text-decoration: underline;
     color: $foreground;
@@ -38,23 +59,7 @@ a {
     }
 }
 
-.glow {
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4666FF, 0 0 40px #4666FF, 0 0 50px #4666FF, 0 0 60px #4666FF, 0 0 70px #4666FF;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #6B85FF, 0 0 40px #6B85FF, 0 0 50px #6B85FF, 0 0 60px #6B85FF, 0 0 70px #6B85FF, 0 0 80px #6B85FF;
-    }
-}
-
-.page-heading {
+.page-title {
     margin-top: 84px;
     margin-bottom: 48px;
 }

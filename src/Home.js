@@ -30,7 +30,7 @@ class Home extends Component {
             <React.Fragment>
                 <Row>
                     <Col xs={12}>
-                        <h1 className="page-heading">
+                        <h1 className="page-title">
                             About Me
                         </h1>
                         <p className="home-text">
