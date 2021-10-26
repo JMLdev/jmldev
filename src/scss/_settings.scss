@@ -8,3 +8,9 @@ $xxl: 1400px;
 // custom
 $background: #424242 !important;
 $foreground: #cacaca !important;
+
+.img-border {
+    margin-bottom: 16px;
+    border: 10px solid $foreground;
+    border-radius: 24px;
+}

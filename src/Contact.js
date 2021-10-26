@@ -16,9 +16,18 @@ class Contact extends Component {
   render() {
     return (
       <React.Fragment>
-        <Row>
-          <Col xs="12" className="linked-in">
+        <Row className='contact'>
+          <Col xs="12">
+            <h1 class="page-heading">Contact</h1>
+          </Col>
+          <Col xs="4">
             <img src="/profile-picture.jpg" alt="Profile portrait"/>
+          </Col>
+          <Col xs="8">
+            <p>
+              I think it's best if you <a href="https://www.linkedin.com/in/jeremiahmlong/">contact me on LinkedIn</a>. They have pretty solid contact functionality
+              and that frees me up from needing to maintain a form against the endless onslaught of spam.
+            </p>
           </Col>
         </Row>
       </React.Fragment>

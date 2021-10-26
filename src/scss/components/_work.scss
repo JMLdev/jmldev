@@ -4,8 +4,7 @@
         margin-bottom: 24px;
 
         img {
-            margin-bottom: 16px;
-            border: 10px solid $foreground;
+            @extend .img-border;
         }
     }
 
