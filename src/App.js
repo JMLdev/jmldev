@@ -64,7 +64,7 @@ class App extends Component {
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/work" component={Work} />
-          <Route path="/contact" render={props => <Contact height={this.state.height} width={this.state.width} />} />
+          <Route path="/contact" component={Contact} />
           <canvas id="my-canvas" style={this.state.canvasStyle}>
           </canvas>
         </Container>
