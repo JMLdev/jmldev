@@ -30,7 +30,7 @@ p {
 }
 
 .text-block {
-    background-color: #333;
+    background-color: $text-background;
     padding-top: 16px;
     padding-bottom: 16px;
     border-radius: 24px;
@@ -44,7 +44,7 @@ p {
         right: auto;
         left: -20px;
         border: 22px solid;
-        border-color: #333 transparent transparent transparent;
+        border-color: $text-background transparent transparent transparent;
 
     }
 }

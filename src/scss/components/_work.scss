@@ -1,4 +1,5 @@
 .work {
+    position: relative;
 
     .work-item {
         margin-bottom: 24px;
@@ -20,6 +21,27 @@
             position: absolute;
             top: 19px;
             right: 0;
+        }
+    }
+
+    .exit {
+        display: none;
+        text-align: right;
+    }
+
+    .expanded {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        background-color: $text-background;
+        padding-top: 48px;
+        max-width: 100%;
+
+        .exit {
+            display: block;
         }
     }
 
