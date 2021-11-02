@@ -18,7 +18,7 @@ class Contact extends Component {
       <React.Fragment>
         <Row className='contact'>
           <Col xs="12">
-            <h1 class="page-title">Contact</h1>
+            <h1 className="page-title">Contact</h1>
           </Col>
           <Col xs="4">
             <img src="/profile-picture.jpg" alt="Profile portrait"/>

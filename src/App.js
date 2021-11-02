@@ -42,6 +42,13 @@ class App extends Component {
     };
     let confetti = new ConfettiGenerator(confettiSettings);
     confetti.render();
+    // preload images for now until I find a better solution
+    const images = ['/welcome.expe.jpg', '/mkto.jpg', '/dev-msft.jpg', '/msft-oobe.png'];
+    images.forEach((image) => {
+      const newImage = new Image();
+      newImage.src = image;
+      window[image] = newImage;
+    })
   }
 
   componentWillUnmount() {

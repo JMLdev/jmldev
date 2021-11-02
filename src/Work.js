@@ -8,7 +8,7 @@ class Work extends Component {
     return (
       <Row className="work">
         <Col xs="12">
-          <h1 class="page-title">
+          <h1 className="page-title">
             Some of my work
           </h1>
         </Col>
