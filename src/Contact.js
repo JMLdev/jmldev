@@ -16,24 +16,19 @@ class Contact extends Component {
   render() {
     return (
       <React.Fragment>
-        <Row>
-          <Col xs="12" className="linked-in">
-            <div
-              className="LI-profile-badge"
-              data-version="v1"
-              data-size="medium"
-              data-locale="en_US"
-              data-type="vertical"
-              data-theme="dark"
-              data-vanity="jeremiahmlong"
-            >
-              <a
-                className="LI-simple-link"
-                href="https://www.linkedin.com/in/jeremiahmlong?trk=profile-badge"
-              >
-                Jeremiah Long
-              </a>
-            </div>
+        <Row className='contact'>
+          <Col xs="12">
+            <h1 className="page-title">Contact</h1>
+          </Col>
+          <Col xs="4">
+            <img src="/profile-picture.jpg" alt="Profile portrait"/>
+          </Col>
+          <Col xs="8" className="text-block">
+            <p>
+              Go ahead and <a href="https://www.linkedin.com/in/jeremiahmlong/">look me up on LinkedIn</a>.
+              You can send me a message there, and also take a look at my work history, volunteer work, 
+              endorsements, and certifications.
+            </p>
           </Col>
         </Row>
       </React.Fragment>

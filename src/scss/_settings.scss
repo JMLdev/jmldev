@@ -1,0 +1,32 @@
+//grid
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+// custom
+$background: #424242 !important;
+$foreground: #cacaca !important;
+
+.img-border {
+    margin-bottom: 16px;
+    border: 10px solid $foreground;
+    border-radius: 24px;
+}
+
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4666FF, 0 0 40px #4666FF, 0 0 50px #4666FF, 0 0 60px #4666FF, 0 0 70px #4666FF;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #6B85FF, 0 0 40px #6B85FF, 0 0 50px #6B85FF, 0 0 60px #6B85FF, 0 0 70px #6B85FF, 0 0 80px #6B85FF;
+    }
+}

@@ -1,0 +1,32 @@
+.navbar-dark {
+    background-color: $background;
+    padding-left: 0;
+    padding-right: 0;
+
+    .navbar-brand {
+        .jml {
+            font-size: 32px;
+        }
+        .bracket {
+            font-size: 36px;
+        }
+        .dev {
+            vertical-align: text-bottom;
+        }
+        img {
+            width: 90px;
+            height: auto;
+        }
+    }
+    .navbar-nav {
+
+        .nav-link {
+            color: $foreground;
+
+            .octicon {
+                margin-right: 6px;
+                margin-bottom: 2px;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.work {
+
+    .work-item {
+        margin-bottom: 24px;
+
+        img {
+            @extend .img-border;
+        }
+    }
+
+
+    .squirrel-wrap {
+        margin-right: auto;
+        margin-left: auto;
+        display: inline-block;
+        position: relative;
+        margin-top: 84px;
+
+        p {
+            position: absolute;
+            top: 19px;
+            right: 0;
+        }
+    }
+
+    @media only screen and (min-width: $md) {
+        h3 {
+            min-height: 70px;
+        }
+    }
+
+}

@@ -1,0 +1,65 @@
+
+
+@import 'settings';
+@import './components/navbar';
+@import './components/linkedin';
+@import './components/spark-bubble';
+@import './components/work';
+@import './components/contact';
+@import './components/about';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* background: linear-gradient(to top,#2f2f2f 96%,#393939 100%); */
+    background-color: $background;
+    color: $foreground;
+    img {
+        max-width: 100%;
+    }
+}
+
+
+
+p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.text-block {
+    background-color: #333;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 24px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        right: auto;
+        left: -20px;
+        border: 22px solid;
+        border-color: #333 transparent transparent transparent;
+
+    }
+}
+a {
+    text-decoration: underline;
+    color: $foreground;
+
+    &:hover {
+        cursor: pointer;
+        color: #fff;
+        @extend .glow;
+    }
+}
+
+.page-title {
+    margin-top: 84px;
+    margin-bottom: 48px;
+}

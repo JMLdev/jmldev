@@ -12,6 +12,10 @@
 /build
 
 # misc
+README-LOCAL.md
+TODO.md
+cpanel.jpg
+local-stuff/
 .DS_Store
 .env.local
 .env.development.local

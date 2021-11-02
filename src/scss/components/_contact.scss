@@ -1,0 +1,6 @@
+.contact {
+    img {
+        @extend .img-border;
+        width: 300px;
+    }
+}
