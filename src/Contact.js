@@ -26,7 +26,7 @@ class Contact extends Component {
           <Col xs="8" className="text-block">
             <p>
               Go ahead and <a href="https://www.linkedin.com/in/jeremiahmlong/">look me up on LinkedIn</a>.
-              You can send me a message there, and also take a look at my work history, volunteer work, 
+              You can send me a message there, and take a look at my work history, volunteer work, 
               endorsements, and certifications.
             </p>
           </Col>
