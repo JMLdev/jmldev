@@ -29,26 +29,31 @@
         text-align: right;
     }
 
-    .expanded {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 999;
-        background-color: $text-background;
-        padding-top: 48px;
-        max-width: 100%;
-
-        .exit {
-            display: block;
-        }
-    }
-
+    
     @media only screen and (min-width: $md) {
         h3 {
             min-height: 70px;
         }
+
+        .work-item {
+
+            &.expanded {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 999;
+                background-color: $text-background;
+                padding-top: 48px;
+                max-width: 100%;
+        
+                .exit {
+                    display: block;
+                }
+            }
+        }
+
     }
 
 }
